@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário</title>
+    </head>
+    <body>
+        <h1>Evento: SoulCode Patty</h1>
+
+        <form
+            action="#"
+            id="formulario"
+            method="post"
+            style="
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+            "
+        >
+            <label for="nome">Nome</label>
+            <input
+                type="text"
+                name="nome"
+                id="nome"
+                required
+                placeholder="Digite seu nome completo"
+            />
+
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" />
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="seuemail@exemplo.com"
+            />
+
+            <label for="cidade">Cidade</label>
+            <!-- Opção de select -->
+            <input
+                type="text"
+                name="cidade"
+                id="cidade"
+                required
+                placeholder="Digite sua cidade"
+            />
+
+            <label for="cidade">Estado</label>
+            <select name="estado" id="">
+                Estado
+                <option value="" selected>Selecione um Estado</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+                <option value="PA">Pará</option>
+                <optgroup label="Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grade do Sul</option>
+                </optgroup>
+            </select>
+
+            <label for="escolaridade"> Nível de escolaridade</label>
+            <select name="escolaridade" id="escolaridade">
+                <option value="" selected>Selecione uma escolaride</option>
+                <option value="EM">Ensino Médio</option>
+                <option value="ET">Ensino Técnico</option>
+                <option value="ES">Ensino Superior</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <label for="areaInteresse">Área de Interesse</label>
+            <div>
+                <input
+                    type="checkbox"
+                    name="interesses"
+                    id="info"
+                    value="Programação"
+                /><label for="info">Programação</label>
+            </div>
+            <div>
+                <input
+                    type="checkbox"
+                    name="interesses"
+                    id="design"
+                    value="Design"
+                /><label for="info">Design</label>
+            </div>
+            <div>
+                <input
+                    type="checkbox"
+                    name="interesses"
+                    id="robotica"
+                    value="Robótica"
+                /><label for="info">Robótica</label>
+            </div>
+            <div>
+                <input
+                    type="checkbox"
+                    name="interesses"
+                    id="jogosDigitais"
+                    value="Jogos Digitais"
+                /><label for="info">Jogos Digitais</label>
+            </div>
+            <div>
+                <input
+                    type="checkbox"
+                    name="interesses"
+                    id="IA"
+                    value="Inteligência Artificial"
+                /><label for="info">Inteligência Artificial</label>
+            </div>
+
+            <label>Deseja participar de alguma palestra específica?</label>
+            <div>
+                <input type="radio" name="palestra" id="sim" value="sim" />
+                <label for="sim">Sim</label>
+            </div>
+            <div>
+                <input type="radio" name="palestra" id="nao" value="nao" />
+                <label for="nao">Não</label>
+            </div>
+
+            <label for="resumo">Conte-nos mais...</label>
+            <textarea
+                name="resumo"
+                style="resize: vertical"
+                cols="100"
+                rows="3"
+                name="resumo"
+                id="resumo"
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+
+            <button type="reset">Limpar</button>
+        </form>
+    </body>
+</html>
