@@ -19,7 +19,7 @@
                 gap: 10px;
             "
         >
-            Nome Completo
+            <label for="nome">Nome Completo</label>
             <!-- <input
              Atenção, não enviar esse nome padrão pois ele ira inclusive p o backnd
                 type="text"
@@ -30,32 +30,171 @@
             <input
                 type="text"
                 name="nome"
+                id="nome"
+                required
                 placeholder="Digite seu nome completo"
             />
 
-            Email
+            <label for="email">Email</label>
             <input
                 type="email"
                 name="email"
+                id="email"
+                required
                 placeholder="seuemail@exemplo.com"
             />
 
-            Altura (cm)
-            <input type="number" name="altura" value="175" />
+            <label for="altura">Altura (cm)</label>
+            <input
+                type="number"
+                name="altura"
+                id="altura"
+                value="175"
+                min="0"
+                max="400"
+            />
 
-            Senha
-            <input type="password" name="senha" />
+            <label for="senha">Senha</label>
+            <input
+                type="password"
+                name="senha"
+                id="senha"
+                required
+                minlength="6"
+                maxlength="20"
+            />
 
-            Resumo de Vida
+            <label for="cpf">CPF</label>
+            <input
+                type="text"
+                name="cpf"
+                id="cpf"
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                placeholder="000.000.000-00"
+                title="Digite o CPF no formato: 000.000.000-00"
+            />
+
+            <label for="resumo">Resumo de Vida</label>
             <textarea
                 name="resumo"
                 style="resize: vertical"
                 cols="100"
                 rows="3"
-                name=""
-                id=""
-                ></textarea>
-                <input type="submit" value="Enviar">
+                name="resumo"
+                id="resumo"
+            ></textarea>
+            <!-- <input type="submit" value="Enviar"> -->
+
+            <label>Formação</label>
+            <div>
+                <input
+                    type="radio"
+                    name="formacao"
+                    id="exercito"
+                    value="Exército"
+                />
+                <label for="exercito">Exército</label>
+            </div>
+            <div>
+                <input
+                    type="radio"
+                    name="formacao"
+                    id="marinha"
+                    value="Marinha"
+                    checked
+                />
+                <label for="marinha">Marinha</label>
+            </div>
+            <div>
+                <input
+                    type="radio"
+                    name="formacao"
+                    id="aeronautica"
+                    value="Aeronáutica"
+                />
+                <label for="aeronautica">Aeronáutica</label>
+            </div>
+
+            <label>Interesses</label>
+            <div>
+                <input
+                    type="checkbox"
+                    name="interesses"
+                    id="info"
+                    value="Informática"
+                /><label for="info">Informática</label>
+            </div>
+            <div>
+                <input
+                    type="checkbox"
+                    name="interesses"
+                    id="engen"
+                    value="Engenharia"
+                /><label for="engen">Engenharia</label>
+            </div>
+            <div>
+                <input
+                    type="checkbox"
+                    name="interesses"
+                    id="infan"
+                    value="Infantaria"
+                    checked
+                /><label for="infan">Infantaria</label>
+            </div>
+            <div>
+                <input
+                    type="checkbox"
+                    name="interesses"
+                    id="caval"
+                    value="Cavalaria"
+                    disabled
+                /><label for="caval">Cavalaria</label>
+            </div>
+            <div>
+                <input
+                    type="checkbox"
+                    name="interesses"
+                    id="medic"
+                    value="Medicina"
+                /><label for="medic">Medicina</label>
+            </div>
+
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="" selected disabled>Selecione um Estado</option>
+                <optgroup label="Nordeste">
+                    <option value="CE">Ceará</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <!-- <option value="SP" selected>São Paulo</option> -->
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <option value="AM">Amaznonas</option>
+
+                <option value="PR">Paraná</option>
+            </select>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" disabled />
+
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" name="nascimento" id="nascimento" />
+
+            <label for="horaNascimento">Horário de Nascimento</label>
+            <input type="time" name="horaNascimento" id="horaNascimento" />
+
+            <label for="foto">Foto 3x4</label>
+            <input type="file" name="foto" id="foto" accept="image/*" />
+
+            <input type="color" />
+
+            <input type="range" />
+
+            <input type="search" />
+
+            <!-- Validação -->
 
             <button type="submit">Enviar</button>
 
@@ -65,5 +204,7 @@
         </form>
 
         <!-- <button form="formulario">Enviar</button> -->
+
+        <!-- pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" -->
     </body>
 </html>
