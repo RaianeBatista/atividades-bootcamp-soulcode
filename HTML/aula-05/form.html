@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aula05-Formulários</title>
+    </head>
+    <body>
+        <h1>Formulário das Forças Armadas do Brasil</h1>
+
+        <form
+            id="formulario"
+            action="#"
+            method="post"
+            style="
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 10px;
+            "
+        >
+            Nome Completo
+            <!-- <input
+             Atenção, não enviar esse nome padrão pois ele ira inclusive p o backnd
+                type="text"
+                name="nome"
+                value="João"
+                placeholder="Digite seu nome completo"
+            /> -->
+            <input
+                type="text"
+                name="nome"
+                placeholder="Digite seu nome completo"
+            />
+
+            Email
+            <input
+                type="email"
+                name="email"
+                placeholder="seuemail@exemplo.com"
+            />
+
+            Altura (cm)
+            <input type="number" name="altura" value="175" />
+
+            Senha
+            <input type="password" name="senha" />
+
+            Resumo de Vida
+            <textarea
+                name="resumo"
+                style="resize: vertical"
+                cols="100"
+                rows="3"
+                name=""
+                id=""
+                ></textarea>
+                <input type="submit" value="Enviar">
+
+            <button type="submit">Enviar</button>
+
+            <button type="reset">Limpar</button>
+
+            <button type="button">Não Faz Nada</button>
+        </form>
+
+        <!-- <button form="formulario">Enviar</button> -->
+    </body>
+</html>
