@@ -1,0 +1,57 @@
+h1 {
+    font-weight: 500;
+}
+
+p {
+    color: cadetblue;
+    font-style: italic;
+    font-size: 24px;
+}
+
+#slogan {
+    color: cornflowerblue;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(yellowgreen, green);
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+.shadow {
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* #slogan .button {
+    background: linear-gradient(blue, red);
+    color: white;
+} */
+
+#slogan {
+    color: brown;
+}
+
+.link {
+    color: rgb(178, 8, 224);
+}
+
+.link:visited {
+    color: rgb(224, 239, 14);
+}
+
+.link:hover {
+    color: blue;
+}
+
+.link:active {
+    color: red;
+}
+
+.link:focus {
+    font-weight: 700;
+}
+/* Para navegar entre as tags usa-se o tab para avançar e o shift+tab para retornar */
