@@ -6,8 +6,9 @@
         <title>Formulário</title>
     </head>
     <body>
-        <h1>Evento: SoulCode Patty</h1>
-
+        <h1>Evento: SoulCode Summit</h1>
+        <!--  autocomplete="off" pode ser add na tag form -->
+          <!--   method="get" envia p propria pagina -->
         <form
             action="#"
             id="formulario"
@@ -29,7 +30,7 @@
             />
 
             <label for="idade">Idade</label>
-            <input type="number" name="idade" id="idade" />
+            <input type="number" name="idade" id="idade" min="0" max="200" />
 
             <label for="email">Email</label>
             <input
@@ -50,8 +51,8 @@
                 placeholder="Digite sua cidade"
             />
 
-            <label for="cidade">Estado</label>
-            <select name="estado" id="">
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
                 Estado
                 <option value="" selected>Selecione um Estado</option>
                 <optgroup label="Sudeste">
@@ -72,7 +73,9 @@
 
             <label for="escolaridade"> Nível de escolaridade</label>
             <select name="escolaridade" id="escolaridade">
-                <option value="" selected>Selecione uma escolaride</option>
+                <option value="" selected disabled>
+                    Selecione uma escolaridade
+                </option>
                 <option value="EM">Ensino Médio</option>
                 <option value="ET">Ensino Técnico</option>
                 <option value="ES">Ensino Superior</option>
@@ -84,9 +87,9 @@
                 <input
                     type="checkbox"
                     name="interesses"
-                    id="info"
+                    id="prog"
                     value="Programação"
-                /><label for="info">Programação</label>
+                /><label for="prog">Programação</label>
             </div>
             <div>
                 <input
@@ -94,23 +97,23 @@
                     name="interesses"
                     id="design"
                     value="Design"
-                /><label for="info">Design</label>
+                /><label for="design">Design</label>
             </div>
             <div>
                 <input
                     type="checkbox"
                     name="interesses"
-                    id="robotica"
+                    id="robot"
                     value="Robótica"
-                /><label for="info">Robótica</label>
+                /><label for="robot">Robótica</label>
             </div>
             <div>
                 <input
                     type="checkbox"
                     name="interesses"
-                    id="jogosDigitais"
+                    id="jogo"
                     value="Jogos Digitais"
-                /><label for="info">Jogos Digitais</label>
+                /><label for="jogo">Jogos Digitais</label>
             </div>
             <div>
                 <input
@@ -118,31 +121,31 @@
                     name="interesses"
                     id="IA"
                     value="Inteligência Artificial"
-                /><label for="info">Inteligência Artificial</label>
+                /><label for="IA">Inteligência Artificial</label>
             </div>
 
             <label>Deseja participar de alguma palestra específica?</label>
             <div>
-                <input type="radio" name="palestra" id="sim" value="sim" />
+                <input type="radio" name="participar" id="sim" value="sim" required/>
                 <label for="sim">Sim</label>
             </div>
             <div>
-                <input type="radio" name="palestra" id="nao" value="nao" />
-                <label for="nao">Não</label>
+                <input type="radio" name="participar" id="nao" value="nao" required />
+                <label for=
+                "nao">Não</label>
             </div>
 
             <label for="resumo">Conte-nos mais...</label>
             <textarea
                 name="resumo"
                 style="resize: vertical"
-                cols="100"
+                cols="50"
                 rows="3"
                 name="resumo"
                 id="resumo"
             ></textarea>
 
             <button type="submit">Enviar</button>
-
             <button type="reset">Limpar</button>
         </form>
     </body>
