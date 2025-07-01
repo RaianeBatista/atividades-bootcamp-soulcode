@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+#name {
+    color: gold;
+    background-color: #111111;
+    font-family: "Times New Roman, Times, serif";
+    font-size:/*50px */ 3.125rem;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+
+#rgb {
+    color: rgb(106, 94, 234);
+    background-color: rgb(18, 188, 61);
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Montserrat", "Verdana", "Arial", "system-ui", "sans-serif";
+    font-size: 2rem; /*O mais recomendado usar 16px como base para dividir e multiplicar*/
+}
+
+#hexa {
+    color: #d09351;
+    background-color: gray;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+}
+
+#alpha {
+    /* color: #00000080; */
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(
+        255,
+        10,
+        20,
+        0.6
+    ); /*rgba(255, 10, 20, 1), rgba(255, 10, 20, 0.8),*/
+    /* font-family: 'jet brains', monospace; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 200%; /* 62% = 9.92px*/
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.2; /*1.5, 1.8, 1.9, 2.5*/
+    word-spacing: 10px;
+    letter-spacing: 5px ; /*-5px*/
+}
