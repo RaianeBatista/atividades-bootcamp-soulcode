@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+#caixa {
+    background-color: #ff6347;
+    display: block;
+
+    width: 100%; /*400px*/
+    height: 300px;
+    max-width: 1400px;
+    min-width: 320px;
+
+    padding: 20px 40px;
+    /* margin: 30px 10px 20px 40px; */
+    margin: 0 auto; /*metodo para centralizar*/
+    border: 5px solid #557655; /*dotted dashed double*/
+}
+
+#caixa a {
+    background-color: #1dc568;
+    display: inline;
+    /* width: 150px;
+    height: 20px; */
+}

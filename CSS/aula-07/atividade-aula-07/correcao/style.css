@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Montserrat", Arial, Verdana, sans-serif;
+    background-color: #e9ecf8;
+}
+
+p {
+    font-size: 1.125rem; /* 18px */
+}
+
+.cabecalho {
+    background-color: #7bb6c4;
+    padding: 15px 30px;
+}
+
+
+.menu {
+    list-style: none;
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu a {
+    color: #e9ecf8;
+    text-decoration: none;
+}
+
+.rodape {
+    background-color: #64a0af;
+    padding: 15px 30px;
+    color: #e9ecf8;
+    margin-top: 30px;
+}
+
+.rodape p {
+    text-align: center;
+}
+
+.secao {
+    padding: 15px 30px;
+    margin-top: 30px;
+}
+
+.secao h1,
+.secao h2 {
+    color: #202020;
+    text-transform: uppercase;
+    margin: 15px 0px;
+}
+
+#img-pc {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.centro {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.ficha {
+    border-collapse: collapse;
+}
+
+.ficha th,
+.ficha td {
+    border: 2px solid #c5c0c0;
+    padding: 10px 20px;
+}
