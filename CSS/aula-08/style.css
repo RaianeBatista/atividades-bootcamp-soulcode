@@ -53,3 +53,23 @@ body {
    /* background-size: cover;
     background-position: center;
   } */ 
+
+.quadrado {
+    width: 400px;
+    height: 400px;
+    margin: 40px auto;
+    border: 20px double gray;
+    border-radius: 50%; /*250px*/
+    border-left-color:transparent ;
+    animation: spin 10s infinite linear;
+}
+
+/* Esse site dimunui o tamanho da imagem sem remover a qualidade https://squoosh.app 
+
+Paralax com css
+*/
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
