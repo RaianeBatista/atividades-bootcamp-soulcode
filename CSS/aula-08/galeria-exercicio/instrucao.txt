@@ -1,0 +1,4 @@
+- Criar uma area central na página com 1200px de largura máxima
+- Criar uma galeria de fotos. Na largura maxima disoinvel, encaixe 3 fotos.
+- Conforme a largura da tela diminuir, as imagens deve se ajustar na tela, e devem ter definido larguras minimas de 300px.
+- Na largura de dispositivo movel, as imagens devem se apresentar em coluna.

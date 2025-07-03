@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.galeria {
+    display: flex;
+    border: 5px dashed gray;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+   gap: 10px;
+   margin-top: 20px;
+    
+}
+
+.item {
+   width: 300px;
+    min-height: 300px;
+    display: flex;
+    flex: 1;
+}
