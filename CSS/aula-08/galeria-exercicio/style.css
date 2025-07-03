@@ -13,16 +13,15 @@ body {
     display: flex;
     border: 5px dashed gray;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     flex-wrap: wrap;
 
-   gap: 10px;
-   margin-top: 20px;
-    
+    gap: 10px;
+    padding: 10px;
 }
 
 .item {
-   width: 300px;
+    width: 300px;
     min-height: 300px;
     display: flex;
     flex: 1;
