@@ -73,3 +73,9 @@ contador--; // 11 - 1
 console.log(contador); // 10
 
 // Não temn divisão por 0 zero e retorna infinito
+
+//Javascript, conceito de conversão implicita e explicita (false * false = 0), "abc / 2 = NaN"
+let numeroString = "1024";
+let numero = Number(numeroString); // Conversão explicita de string para Number do Javascript
+console.log(typeof numeroString);
+console.log(typeof numero);
