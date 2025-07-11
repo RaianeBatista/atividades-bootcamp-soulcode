@@ -64,7 +64,7 @@ const somar = function (n1, n2) {
     return soma;
 };
 
-console.log(somar(12, 8));
+//console.log(somar(12, 8));
 
 // Funções de seta => (Arrow Functions)
 // Cria a variavel constante e poe a funcão anonima dentro dessa constante
@@ -86,18 +86,18 @@ const subtrair2 = (n1, n2) => {
 };
 
 let resultado3 = subtrair2(15, 9);
-console.log(resultado3);
+//console.log(resultado3);
 
 // Arrow function
 const subtrair3 = (n1, n2) => n1 - n2; // Função com uma linha de código,
 // omitir as chaves e po return, nesses casos, o return fica explicito apos a seta
 
 let resultado4 = subtrair2(15, 9);
-console.log(resultado4);
+//console.log(resultado4);
 
 //Exemplo 2 - Arrow function
 const quadrado = (n) => n ** 2;
-console.log(quadrado(8));
+//console.log(quadrado(8));
 
 // Funções Callback, função passada como argumento para outra
 function delay() {
@@ -109,33 +109,33 @@ setTimeout(delay, 3000);
 // Exemplos de callback
 function saudar(callback, nome) {
     // (função e a pessoa)
-    console.log("Preparando a saudação.");
+    //console.log("Preparando a saudação.");
     callback(nome);
 }
 function mostrarSaudacao(nome) {
     // função callback
-    console.log("Olá", nome);
+    //console.log("Olá", nome);
 }
 
 function boasVindas(nome) {
     // função callback
-    console.log("Bem-vindo", nome);
+    //console.log("Bem-vindo", nome);
 }
 
 saudar(mostrarSaudacao, "Raiane");
 saudar(boasVindas, "Orlima");
 
 setTimeout(() => {
-    console.log("Acabou o tempo!");
+    // console.log("Acabou o tempo!");
 }, 3000);
 
 let interval = setInterval(() => {
-    console.log("Passou 4 segundos.");
+    //console.log("Passou 4 segundos.");
 }, 4000);
 
 clearInterval(interval); // Para parar a função setInterval
 
-console.log("Final do código.");
+//console.log("Final do código.");
 
 // Função SIM/NAO numero Par
 
@@ -153,4 +153,15 @@ function verificarPar(numero) {
     return "NÃO"; // O return encerra a função
 }
 
-console.log(verificarPar(16));
+//console.log(verificarPar(16));
+
+function despedida() {
+    console.log("Até mais");
+}
+
+function teste(nome, callback) {
+    console.log("Olá, " + nome);
+    callback();
+}
+
+teste("Raiane", despedida);
