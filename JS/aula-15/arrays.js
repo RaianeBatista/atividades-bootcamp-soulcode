@@ -104,18 +104,17 @@ console.log(nums.sort());
 
 const frutas = ["Banana", "Abacaxi", "Morango"];
 
-console.log("Usando for tradicional")
+console.log("Usando for tradicional");
 for (let i = 0; i < frutas.length; i++) {
     console.log("Vou comer " + frutas[i]);
 }
 
-console.log("***Usando forEach***")
+console.log("***Usando forEach***");
 frutas.forEach((fr) => {
-    console.log("Vou comer " + fr)
-})
+    console.log("Vou comer " + fr);
+});
 
-
-console.log("***Usando for of***")
+console.log("***Usando for of***");
 for (let fruta of frutas) {
-    console.log("Vou comer " + fruta)
+    console.log("Vou comer " + fruta);
 }
