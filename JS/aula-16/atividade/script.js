@@ -2,27 +2,23 @@
 // titulo.textContent = "Atividade JavaScript - Lâmpada"
 // document.body.appendChild(titulo)
 
-const lampadas = [
-"./images/lampada-apagada.png",
-"./images/lampada-acesa.png",
-]
 const lampada = document.querySelector("#lampada");
+const lampadas = ["./images/lampada-apagada.png", "./images/lampada-acesa.png"];
 let indice = 0;
 
+//const lampada.src
 
-const corDeFundo = ["black", "white"]
-const cor = document.querySelector("body")
-let i = 0;
-
-
+const cor = document.querySelector("body");
+const corDeFundo = ["black", "white"];
 
 setInterval(() => {
-    if (indice == 0 && i == 0 ) {
-        indice = 1, i = 1, texto = 1
+    if (indice == 0) {
+        indice = 1;
     } else {
-        indice = 0, i = 0, indiceTexto = 0
+        indice = 0;
     }
-    lampada.src = lampadas[indice]
-    cor.style.background = corDeFundo[i]
+    lampada.src = lampadas[indice];
+    cor.style.background = corDeFundo[indice];
+}, 2000);
 
-},2000)
+setInterval: clearInterval(interval);
