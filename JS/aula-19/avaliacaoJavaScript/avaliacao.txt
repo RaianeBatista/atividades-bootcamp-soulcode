@@ -1,0 +1,9 @@
+Construa uma aplicação simples de Lista de Tarefas para organizar tarefas. O objetivo é criar uma página web com uma interface simples e funcional usando Bootstrap e JavaScript.
+
+
+Regras:
+O usuário deve conseguir adicionar uma nova tarefa e definir sua prioridade através de um formulário.
+As tarefas devem aparecer em uma tabela logo abaixo do formulário de inserção.
+Cada tarefa adicionada deve ter um botão para concluir da lista.
+Ao concluir a tarefa, ela não deve ser mostrada novamente na tabela.
+Utilize o wireframe em anexo como esboço para a construção da interface da página.
