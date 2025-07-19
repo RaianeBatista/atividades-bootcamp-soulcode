@@ -1,0 +1,58 @@
+npm init
+npm init -y => gera o package json no formato padrão, sem fazer perguntas
+Para executar o arquivo de modo que o servidor sempre fique escutando as alterações:
+node --watch index.js
+
+Usando  esse script, utilize o comando:
+npm run dev
+
+Para parar a execução:
+Control+C
+
+Instalando a dependencia Express:
+npm install express
+npm i express
+
+Para desinstalar dependencia:
+npm uninstall
+
+Quando já tem o package json, só precisa instalar o =>  npm install
+
+Express é a biblioteca pra criar o servidor
+
+HTTP (GET, POST, PUT DELETE)~
+
+server.get("/ola", (req, res) => {
+    //res.sendFile("./index.html");
+    // res.sendFile("index.html", { root: "." });
+    // res.sendFile("C:\\Bootcamp_SoulCode\\web-dev-studies\\Node\\index.html");
+});
+
+Requisição da api
+https://api.github.com/users/RaianeBatista/repos
+
+Consumir a API
+
+REST -  comunicação do front com o back 
+
+Tudo isso se chama REST - Representational State Transfer
+Banco de Dados - JSON
+Back (API) - JSON
+Front - REACT
+IOS <= Navegador => Android
+
+O processo de enviar os dados e serem utilizados pelo front chama-se consumo de DADOS.
+
+API -  /produtos - Pontos de extremidades / Endpoints
+/users
+
+Protocolos de comunicaçãoposta : ssh://soulcode.conm22
+80
+Porta: 443 
+
+Firebase.com, pesquisar sobre
+
+HTTPS status
+https://http.cat/
+https://http.dog/
+https://httpstatusdogs.com/
