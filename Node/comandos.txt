@@ -56,3 +56,6 @@ HTTPS status
 https://http.cat/
 https://http.dog/
 https://httpstatusdogs.com/
+
+Instalando o dotenv: npm i dotenv - lib que configura o ambiente
+.env armazena as variaveis d ambiente dentro do projeto,

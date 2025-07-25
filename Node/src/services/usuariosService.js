@@ -40,10 +40,25 @@ async function remove(id) {
   const docRef = db.collection("usuarios").doc(id);
   const doc = await docRef.get();
 
-  if (doc.exists) {
-    return true;
-  }
-  return false;
+  if (!doc.exists) 
+    return false;
+  
+  await docRef.delete()
+  return true
 }
 
 export { findAll, findById, save, remove };
+
+
+// solução alternativa
+// async function remove(id) {
+//     const docRef = db.collection("usuarios").doc(id);
+//     const doc = await docRef.get();
+
+//     if (doc.exists) {
+//         await docRef.delete();
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
