@@ -6,7 +6,7 @@ const form = document.querySelector("#form");
 const tbodyListaTarefas = document.querySelector("#lista-tarefas"); // Onde as tarefas serão adicionadas na tabela
 
 // Array para armazenar as tarefas.
-// Vamos simular um "banco de dados" temporário.
+// Simula um "banco de dados" temporário.
 let tarefas = [];
 
 // 1. Função para adicionar uma nova tarefa ao array 'tarefas'

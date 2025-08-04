@@ -1,0 +1,569 @@
+Ao criar o projeto com esse comando => npm create vite@latest .
+O React não cria uma nova pasta, o projeto é craido na pasta já existente
+Isso devido ao ponto no final do comando
+
+Comandos para executar a aplicação
+npm install
+npm run dev
+
+Comando para atualizar a versão  do npm:
+npm i -g npm@latest
+
+npm -v => mostra a versão do npm
+
+Comandos do Vite:
+  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+h
+
+  Shortcuts
+  press r + enter to restart the server
+  press u + enter to show server url
+  press o + enter to open in browser
+  press c + enter to clear console
+  press q + enter to quit, parar a execução
+
+Quando houver problema/conflitos de portas, la no package joson altere
+O vite 5154 altera automatico e se não mudar faça essa alteração manual no package json.
+"dev": " vite  --port=3000"
+
+Transpilação
+jsx é convertido para javascript no navegador
+javascript jml é convertido
+
+O React converte o jsx para javascript
+
+Instalação do bootstrap:
+npm i bootstrap
+
+https://www.w3schools.com/react/react_getstarted.asp
+
+Componente é uma função do React
+
+Componente é uma função que retorna o HTML, com a 1ª letra maiúscula <></>
+No React a interpolação é entre chaves {}
+
+Instalação do React bootstrap:
+npm install react-bootstrap
+Os componentes ja vem prontos
+
+Instalando a biblioteca React Router DOM
+npm i react-router-dom@6.30.1
+
+Outras opções semelhantes ao React:
+https://mui.com/material-ui/react-switch/
+
+Em paginas internas usa-se a tag Link e em lins externos usa a tag a com hfef
+
+
+
+// Criar a página de Usuarios
+// Configure a página de usuarios na rota /users
+// Na página de usuários adicione um cabeçalho e um rodapé
+
+Atenção, quando o react não importar automatico o arquivo desejado, abra esse arquivo e faça novamente a importação
+
+
+Desestruturação 
+Em Objetos:
+const {id}
+
+const obj = {
+  nome: "Raiane,
+  curso: "React e Node"
+}
+
+const {nome} = obj;
+
+console.log(nome)
+
+Em Arrays:
+const notas = [7, 9, 6, 8]
+const n1 = notas[0]
+const n2 = notas[1]
+const n3 = notas[2]
+const n4 = notas[3]
+
+ DESESTRUTURAÇÃO:
+ const [n1, n2, n3, n4] = notas;
+
+ const alunos = [
+  {nome: "Greison", curso: "React, notas;[6,9]},
+  {nome: "Monica", curso: "React, notas:[10,10]},
+ ];
+
+ const [ {nome}] = alunos; // Desestruturando = retorna o primeiro
+ const [obj, {nome}] = alunos; // Desestruturando
+
+ const {nome} = alunos[0]
+
+ const {nome} = alunos[1]
+
+Outro exemplo de desestruturação
+ const aluno = {
+  nome: "Fernanda,
+  endereco: {
+    cidade: "São Paulo"
+  }
+ }
+ const {endereco} = aluno;
+ const {endereco} = aluno.endereco;
+ const {endereco: {cidade} } = aluno; => cidade -> São Paulo
+
+Exemplo com React
+ fuction useState() {
+  return [
+    "Raiane",
+    fuction(){console.log("Raiane)}
+  ]
+ }
+
+ const [palavra, setPalavra] useState() // retorna o array(2)['Raiane, f]
+
+ console.log(palavra) / retorna Raiane
+
+ setPalavra() / Retorna Raiane
+
+ const {handleSubmit, register} = userForm();
+
+ const {id } = useParams();
+
+
+
+ Documentação de Desestruturação:
+ https://react.dev/learn
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Destructuring
+
+Estados em React
+O state ou estado é um objeto que armazena valores dinâmicos de um componente. Ele representa informações que podem mudar com o tempo e que, ao serem alteradas, provocam uma re-renderização automatica do componente, atualizndo a interface do usuario.
+Cada vez que o estado muda, o componente é reexecutado e a interface se atualiza automaticamente.
+Não se pode ter muitos estados em uma pagina só
+O React DOM  e rastreia os estado e as mudanças e gerencia os estado da pagina
+
+O estado de um componenente são informações que ele é capaz de lembrar e mostrar. Por exemplo, podemos ter um componente que incrementa um valor.
+
+const [age, setAge]=useState(28) => esse 28 é o valor de age-valor inicial
+
+ATENÇAO -  Os estados precisam estar declarado dentro da função, que é o componente
+
+Interpolação - processo de colocar a variavel entre chaves para renderizar na tela  {contador},
+Exemplo , aqui a variavel muda porem não altera o componente na tela, e isso não é bom:
+  let contador = [0];
+
+  setInterval(() => {
+    contador += 1;
+    console.log(contador);
+  }, 1000);
+
+Função modificadora [0, ƒ]
+
+
+import { Container } from "react-bootstrap";
+import Header from "../../components/Header/Header";
+import "./Home.css";
+import Footer from "../../components/Footer/Footer";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+
+export default function Home() {
+  // const [contador, setContadaor] = useState();
+  // const state = useState(0);
+  const [contador, setContadaor] = useState(0);
+  //console.log(state)
+
+  // setInterval(() => {
+  //   contador += 1;
+  //   console.log(contador);
+  // }, 1000);
+
+  return (
+    <>
+      <Header />
+      <Container>
+        <h2>Contador</h2>
+        {contador}
+      </Container>
+      <Container className="py-5">
+        <h1>Página Inicial</h1>
+        <Link to="/products"> Acesse a página de produtos</Link>
+      </Container>
+      <Footer />
+    </>
+  );
+}
+
+setContadador é a função modificadora
+onClick={() => setContador(contador + 1)}
+
+acesso a soul hub, e acesso ao formulario, 
+experiencia pratica no bootcamp
+
+15/08 encerramento bootcamp
+
+Estados
+O useState nos devolve duas
+
+
+DOM Virtual do React
+DOM Real virtual do react
+
+DOM React são as funções do hook
+
+Um hook em React é uma função especial que permite usar recursos em componentes funcionais
+O React reconhece uma função como um hook apenas se ela começar com use.
+- useState - Gerenciar estado.
+- UseEffect - Gerenciar efeitos colaterais como requisições ou times.
+- UseCOntext - Usar o contexto da aplicaçãoCirar logica reutilizável (custom hooks)
+
+Condicionais
+Em React, condicionais são utilizados para renderizar elementos ou componenentes com base em alguma condição. Isso 
+
+Cookies - pesquisar sobre cookies para usar na aplicação
+
+Opéradores
+const [carregando, setCarregando] = useStae
+
+
+Listas 
+const produtos = ["Arroz", "Ketchup", "Abacaxi"]
+
+url
+{products.map(prod, index) => (
+  li
+)}
+
+map:
+const numeros = [1,2,3,4]
+const dobro = numeros.map(n => n * 2)
+dobro = 1, 4, 6, 8
+
+const nomes = ["João", "AnA", "Maria]
+nomes.map(nomes => nomes + " Silva")
+
+Atenção quando usar o map em React, deve-se usar a key, exemplo: 
+ <ul>
+          {times.map((time, index) => <li key={index}>{time}</li>)}
+        </ul>
+
+
+Exemplo de funções em React:
+
+import { Button, Container } from "react-bootstrap";
+import Header from "../../components/Header/Header";
+import "./Home.css";
+import Footer from "../../components/Footer/Footer";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+
+export default function Home() {
+  const [contador, setContador] = useState(0);
+  const [times, setTimes] = useState([
+    "Fluminense",
+    "Flamengo",
+    "Vasco",
+    "Palmeiras",
+    "Botafogo",
+  ]);
+
+  let resultado = null;
+
+  if (contador >= 0) {
+    resultado = "Positivo";
+  } else {
+    resultado = "Negativo";
+  }
+
+  function somar() {
+    setContador(contador + 1);
+  }
+
+  function subtrair() {
+    setContador(contador - 1);
+  }
+
+  return (
+    <>
+      <Header />
+      <Container>
+        <h2>Contador</h2>
+
+        <Button onClick={somar}>+</Button>
+
+        <span className="mx-2">{contador}</span>
+        <Button onClick={subtrair}>-</Button>
+
+        <p>{contador % 2 == 0 ? <i>Par</i> : <b>IMPAR</b>}</p>
+
+        <p>
+          {/* {false && 'Ola'} */}
+          {contador > 10 && "Maior que 10"}
+        </p>
+
+        <p>{resultado}</p>
+
+        <ul>
+          {times.map((time, index) => <li key={index}>{time}</li>)}
+        </ul>
+
+
+       
+      </Container>
+
+      <Container className="py-5">
+        <h1>Página Inicial</h1>
+        <Link to="/products"> Acesse a página de produtos</Link>
+      </Container>
+      <Footer />
+    </>
+  );
+}
+
+Hooks são funcões especiais que permitem o React 
+Efeitos em React:
+Ciclo de vida de um ComponenteEfeitos representam ações colaterais (side effect) que precisam acontecer quando o componente é montado, atualizado ou desmontado.
+
+Montagem
+Atualização
+Desmontagem
+UseEffect- é uma função que é executada em um dado momento do ciclo de vida de um componenete, pode ser na montagem atualização e Desmontagem
+
+Exemplos: 
+Buscar dados de uma API. montagem e atualização, ou so montagem
+
+Cirar timers - com setTimeout, setInterval - na montagem de Desmontagem
+
+Sincronizar dados com o localStorage, useEfect na montagem
+
+O Hook useEffect, efeito colateral, executa uma função sempre que o componente for 
+renderizado ou quando alguns estamos mudarem
+Executa o console.log apenas uma vez, quando o componente for montado. O []
+indica que o efeito não depende de nenhum estado.
+
+Calback e Array matriz no useEfect
+
+Quando a lista é vazia não depende de nenhum estado, Na Montagem
+import {useEffect} from "react";
+
+useEffect(() => {
+  console.log("O componente foi montado!")
+}, [])
+
+
+Ciclo de vida de Atualização
+const [contador, setContador] = useState(0)
+
+useEffect(() => {
+  console.log("O contador mudou.", contador)
+}, [contador])
+
+Sempre que um estado é alterado a componente é montado
+O efeito é uma ação que deve acontecer em dado cicloc de vida do componente
+Por exemplo: so na montagem  
+
+useEffect(() => {
+     console.log("Oi")   
+  }, ([]))
+
+  DOM VIrtual modifica o DOM REAL da tela
+
+  Ciclo de vida na Desmontagem
+  O returndentro dentro do useEffect define uma função de limpesa que 
+  sera chamada quando o componente for desmontado ou antes do efeito rodar novamente.
+
+    useEffect(() => {
+    console.log("Componente iniciado.");
+
+    return () => {
+      console.log("Componente finalizado.")
+    }
+  }, []);
+
+
+
+
+  Notação:
+  como é que faz esses warning sumir la no devtools?
+  clica com o botão esquerdo do mouse e clica na segunda opção, se não me engano Raiane
+
+  A função setInterval é executada apenas uma vez
+
+  O Efeito acontece 2 momentos
+  iniciado
+
+
+  Desmontagdo => dentro do return
+
+  Eventos em React
+  Exemplo de onClick
+
+  function handleClick() {
+    console.log()
+  }
+
+
+  Como acontece a props de de filho para pai, 
+  atraves de função
+  const [dados, setDados] = ...
+
+  function (dados){
+    setDados(dados)
+  }
+
+  props.submit(dados);
+
+  Formulario sendo um outro componente e sendo 
+  chamado no componente Products
+
+  Instlando a biblioteca react hook form, gerencia e controla os estados do formulario,
+ataves da funçao useForm()
+
+se era objeto ->espalha
+se era constante ->vira objeto->espalha
+
+O método register insere as propriedade no campo
+
+convertendo objeto para booleano: {!!errors.nome}, usa 2 pontos de exclamação
+
+ {errors.nome?.message}
+Usa ? para evitar erro ao acessar message de um campo que ainda não tem erro. entendi
+senão quebra a renderização antes mesmo de ter o erro
+no caso o  erro é da pagina ficar em branco né, depois vem as validações
+
+Se a quantidade existir chama a mensagem:
+ {errors.quantidade?.message} => ? operador elvis
+
+ Bibliotecas de estilização:
+ TAILWIND
+ PRIME React
+ MATERIAL UI
+
+ fERRAMENTAS QUE GERAM O BUILD DAS CLASSES PARA EVITAR CONFLITOS, 
+
+ No site render.com, para busrcar a API, pegar o link da api:
+ https://apinodejs-soulcodeacademy.onrender.com
+
+
+
+
+
+codifo alternativo
+
+ import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import "./Products.css";
+import { useState } from "react";
+import TableProd from "../../components/TableProd/TableProd";
+import { useForm } from "react-hook-form";
+
+const produtosDB = [
+    { id: 1, nome: "Notebook Dell", quantidade: 5, preco: 4500.00 },
+    { id: 2, nome: "Mouse Logitech", quantidade: 20, preco: 150.00 },
+    { id: 3, nome: "Teclado Mecânico", quantidade: 10, preco: 350.00 },
+    { id: 4, nome: "Monitor Samsung", quantidade: 7, preco: 1200.00 },
+    { id: 5, nome: "Impressora HP", quantidade: 4, preco: 980.00 },
+    { id: 6, nome: "HD Externo 1TB", quantidade: 15, preco: 390.00 },
+    { id: 7, nome: "Webcam Full HD", quantidade: 8, preco: 250.00 },
+    { id: 8, nome: "Cadeira Gamer", quantidade: 3, preco: 1300.00 },
+    { id: 9, nome: "Smartphone Xiaomi", quantidade: 12, preco: 1800.00 },
+    { id: 10, nome: "Caixa de Som Bluetooth", quantidade: 9, preco: 220.00 }
+];
+
+const nomeValid = {
+    required: {
+        value: true,
+        message: "Preencha o nome do produto."
+    },
+    maxLength: {
+        value: 20,
+        message: "O nome do produto deve ter no máximo 20 caracteres."
+    }
+};
+const quantValid = {
+    required: {
+        value: true,
+        message: "Preencha a quantidade de produtos."
+    },
+    min: {
+        value: 1,
+        message: "Quantidade mínima de 1."
+    }
+};
+const precoValid = {
+    required: {
+        value: true,
+        message: "Preencha o preço do produto."
+    },
+    min: {
+        value: 0.0001,
+        message: "O preço do produto não pode ser menor ou igual a 0."
+    }
+};
+
+export default function Products() {
+    const [produtos, setProdutos] = useState(produtosDB);
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    
+    function onSubmit(dados) {
+        setProdutos([...produtos, dados]);
+    }
+
+    return (
+        <>
+            <Header />
+
+            <Container className="my-5">
+                <h1>Produtos</h1>
+
+                <Form noValidate onSubmit={handleSubmit(onSubmit)}>
+                    <Row className="mb-3">
+                        <Form.Group as={Col} md="12" controlId="nome" >
+                            <Form.Label>Nome do Produto</Form.Label>
+                            <Form.Control type="text" isInvalid={!!errors.nome} {...register("nome", nomeValid)} />
+                            <Form.Control.Feedback type="invalid">
+                                {errors.nome?.message}
+                            </Form.Control.Feedback>
+                        </Form.Group>
+
+                        <Form.Group as={Col} md="6" controlId="quantidade">
+                            <Form.Label>Quantidade</Form.Label>
+                            <Form.Control type="number" isInvalid={!!errors.quantidade} {...register("quantidade", quantValid)} />
+                            <Form.Control.Feedback type="invalid">
+                                {errors.quantidade?.message}
+                            </Form.Control.Feedback>
+                        </Form.Group>
+
+                        <Form.Group as={Col} md="6" controlId="preco">
+                            <Form.Label>Preço</Form.Label>
+                            <Form.Control type="number" isInvalid={!!errors.preco} {...register("preco", precoValid)} />
+                            <Form.Control.Feedback type="invalid">
+                                {errors.preco?.message}
+                            </Form.Control.Feedback>
+                        </Form.Group>
+                    </Row>
+                    <Button type="submit">Cadastrar</Button>
+                </Form>
+            </Container>
+
+            <Container className='my-5'>
+                <h2>Lista de Produtos</h2>
+
+                {produtos.length > 0 ? (
+                    <TableProd produtos={produtos} />
+                ) : (
+                    <p>Não há produtos no estoque.</p>
+                )}
+            </Container>
+            <Footer />
+        </>
+    );
+}
+
+api do Gabriel: https://api-nodejs-344f.onrender.com/produtos
+
+
+  reset(); // Limpa o formulário após cadastrar, serve para preencher, quando no formulario as informaçoes ja estiverem preenchidas
+
+  Biblioteca para notificações:
+  https://react-hot-toast.com/
